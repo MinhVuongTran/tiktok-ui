@@ -12,9 +12,10 @@
 }
 
 .inner {
+    display: flex;
     height: 100%;
     width: var(--default-layout-width);
-    display: flex;
+    padding: var(--default-layout-horizontal-spacer);
     align-items: center;
     justify-content: space-between;
 }
@@ -102,5 +103,6 @@
     margin-left: 16px;
     padding: 4px 8px;
     background-color: transparent;
+    cursor: pointer;
 }
 
