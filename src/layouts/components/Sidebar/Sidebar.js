@@ -1,6 +1,5 @@
 import classNames from 'classnames/bind';
 import styles from './Sidebar.module.scss';
-import Menu, { MenuItem } from './Menu';
 import {
     HomeIcon,
     UserGroupIcon,
@@ -10,6 +9,8 @@ import {
     LiveActiveIcon,
 } from '~/components/Icons';
 import config from '~/config';
+import Menu, { MenuItem } from './Menu';
+import SuggestedAccounts from '~/components/SuggestedAccounts';
 
 const cx = classNames.bind(styles);
 
@@ -34,6 +35,8 @@ function Sidebar() {
                     icon={<LiveIcon />} 
                     activeIcon={<LiveActiveIcon />} />
             </Menu>
+            <SuggestedAccounts label='Suggested accounts'/>
+            <SuggestedAccounts label='Following'/>
         </aside>
     );
 }
